@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "136982099719",
+    "firebase_url": "https://fir-840df.firebaseio.com",
+    "project_id": "fir-840df",
+    "storage_bucket": "fir-840df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136982099719:android:5a2acd0efc90805a92f7a2",
+        "android_client_info": {
+          "package_name": "com.buivanhuybk16.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136982099719-r5c7ra8kaudv2ktt76pa1sut6a72v9qf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5dVG_dbMGUkweOZoZQm4GteFExJPvZnw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136982099719-r5c7ra8kaudv2ktt76pa1sut6a72v9qf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

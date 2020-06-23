@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ControlActivity">
+
+    <TextView
+        android:id="@+id/textView_machine_all"
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:text="ALL"
+        android:textStyle="bold"
+        android:textColor="#ff00"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_machine_3" />
+
+    <TextView
+        android:id="@+id/textView_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Điều Khiển"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_on_1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/selector_button"
+        android:backgroundTint="#00FF0D"
+        android:text="bật"
+        app:layout_constraintStart_toEndOf="@+id/textView_machine_1"
+        app:layout_constraintTop_toTopOf="@+id/textView_machine_1" />
+
+    <Button
+        android:id="@+id/button_on_2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/selector_button"
+        android:backgroundTint="#00FF0D"
+        android:text="bật"
+        app:layout_constraintStart_toEndOf="@+id/textView_machine_2"
+        app:layout_constraintTop_toTopOf="@+id/textView_machine_2" />
+
+    <Button
+        android:id="@+id/button_on_3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/selector_button"
+        android:backgroundTint="#00FF0D"
+        android:text="bật"
+        app:layout_constraintStart_toEndOf="@+id/textView_machine_3"
+        app:layout_constraintTop_toTopOf="@+id/textView_machine_3" />
+
+    <Button
+        android:id="@+id/button_on_all"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/selector_button"
+        android:backgroundTint="#00FF0D"
+        android:text="bật"
+        app:layout_constraintStart_toEndOf="@+id/textView_machine_all"
+        app:layout_constraintTop_toTopOf="@+id/textView_machine_all" />
+
+    <TextView
+        android:id="@+id/textView_machine_1"
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:text="Máy 1"
+        android:textStyle="bold"
+        android:textColor="#ff00"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_control" />
+
+    <TextView
+        android:id="@+id/textView_machine_2"
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:text="Máy 2"
+        android:textStyle="bold"
+        android:textColor="#ff00"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_machine_1" />
+
+    <TextView
+        android:id="@+id/textView_machine_3"
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:text="Máy 3"
+        android:textStyle="bold"
+        android:textColor="#ff00"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_machine_2" />
+
+    <Button
+        android:id="@+id/button_off_1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/selector_button"
+        android:backgroundTint="#FF0000"
+        android:text="tắt"
+        app:layout_constraintStart_toEndOf="@+id/button_on_1"
+        app:layout_constraintTop_toTopOf="@+id/button_on_1" />
+
+    <Button
+        android:id="@+id/button_off_2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/selector_button"
+        android:backgroundTint="#FF0000"
+        android:text="tắt"
+        app:layout_constraintStart_toEndOf="@+id/button_on_2"
+        app:layout_constraintTop_toTopOf="@+id/button_on_2" />
+
+    <Button
+        android:id="@+id/button_off_3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/selector_button"
+        android:backgroundTint="#FF0000"
+        android:text="tắt"
+        app:layout_constraintStart_toEndOf="@+id/button_on_3"
+        app:layout_constraintTop_toTopOf="@+id/button_on_3" />
+
+    <Button
+        android:id="@+id/button_off_all"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/selector_button"
+        android:backgroundTint="#FF0000"
+        android:text="tắt"
+        app:layout_constraintStart_toEndOf="@+id/button_on_all"
+        app:layout_constraintTop_toTopOf="@+id/button_on_all" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

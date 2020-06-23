@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart Factory</string>
+    <string name="finger_add">Thêm</string>
+    <string name="finger_repair">sửa</string>
+    <string name="finger_remove">xóa</string>
+</resources>

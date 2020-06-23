@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart Factory</string>
+    <string name="finger_add">add</string>
+    <string name="finger_remove">remove</string>
+    <string name="finger_repair">repair</string>
+</resources>
