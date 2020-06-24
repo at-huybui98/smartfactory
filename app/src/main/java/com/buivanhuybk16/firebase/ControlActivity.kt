@@ -29,6 +29,10 @@ class ControlActivity : AppCompatActivity() {
                 val status2 = p0.child("device2/status").getValue().toString().toInt()
                 val status3 = p0.child("device3/status").getValue().toString().toInt()
 
+                database.child("change/contro/device1").setValue(status1.toInt())
+                database.child("change/contro/device2").setValue(status2.toInt())
+                database.child("change/contro/device3").setValue(status3.toInt())
+
                 if(status1  == 1)
                     textView_machine_1.setTextColor(Color.parseColor("#00FF0D"))
                 else
@@ -73,7 +77,7 @@ class ControlActivity : AppCompatActivity() {
         button_off_3.setOnClickListener {
             database.child("$part_node/contro/device3").setValue(0)
         }
-//----------------------
+//--------------------------------------------------------------------------------
             button_on_all.setOnClickListener {
                 database.child("$part_node/contro/device1").setValue(1)
                 database.child("$part_node/contro/device2").setValue(1)
@@ -84,7 +88,6 @@ class ControlActivity : AppCompatActivity() {
                 database.child("$part_node/contro/device2").setValue(0)
                 database.child("$part_node/contro/device3").setValue(0)
             }
-
 
     }
 

@@ -29,8 +29,12 @@ class MachineAdapter(private val machineList: List<machineClass>): RecyclerView.
         holder.current.text     = currentItem.current
         holder.voltage.text     = currentItem.voltage
         holder.wattage.text     = currentItem.wattage
+        val status       = currentItem.status
 
-        if(currentItem.current == "0") {
+        if(status == "0") {
+            holder.current.text = "0"
+            holder.voltage.text = "0"
+            holder.wattage.text = "0"
             holder.name.setBackgroundColor(Color.parseColor("#CD5858"))
             holder.current.setBackgroundColor(Color.parseColor("#CD5858"))
             holder.voltage.setBackgroundColor(Color.parseColor("#CD5858"))
@@ -38,6 +42,8 @@ class MachineAdapter(private val machineList: List<machineClass>): RecyclerView.
         }
 
     }
+
+
 
     class AdapterViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 

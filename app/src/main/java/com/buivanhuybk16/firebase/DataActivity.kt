@@ -28,14 +28,17 @@ class DataActivity : AppCompatActivity() {
                 dataList[1].current = p0.child("device1/current").getValue().toString()
                 dataList[1].voltage = p0.child("device1/voltage").getValue().toString()
                 dataList[1].wattage = p0.child("device1/wattage").getValue().toString()
+                dataList[1].status  = p0.child("device1/status").getValue().toString()
 
                 dataList[2].current = p0.child("device2/current").getValue().toString()
                 dataList[2].voltage = p0.child("device2/voltage").getValue().toString()
                 dataList[2].wattage = p0.child("device2/wattage").getValue().toString()
+                dataList[2].status  = p0.child("device2/status").getValue().toString()
 
                 dataList[3].current = p0.child("device3/current").getValue().toString()
                 dataList[3].voltage = p0.child("device3/voltage").getValue().toString()
                 dataList[3].wattage = p0.child("device3/wattage").getValue().toString()
+                dataList[3].status  = p0.child("device3/status").getValue().toString()
 
                 recyclerView_data.adapter           = MachineAdapter(dataList)
                 recyclerView_data.layoutManager     = LinearLayoutManager(this@DataActivity)
@@ -47,10 +50,10 @@ class DataActivity : AppCompatActivity() {
 
     private fun generateDataList(): List<machineClass>{
       val list = ArrayList<machineClass>()
-        list.add(machineClass("Máy", "Dòng Diện","Điện áp","Công suất"))
-        list.add(machineClass("Máy 1", "0","0","0"))
-        list.add(machineClass("Máy 2", "0","0","0"))
-        list.add(machineClass("Máy 3", "0","0","0"))
+        list.add(machineClass("Máy", "Dòng Diện","Điện áp","Công suất","status"))
+        list.add(machineClass("Máy 1", "0","0","0","0"))
+        list.add(machineClass("Máy 2", "0","0","0","0"))
+        list.add(machineClass("Máy 3", "0","0","0","0"))
         return list
     }
 
